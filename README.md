@@ -4,13 +4,13 @@ Most major browser nowadays implements in their DOM model, UI `<input>` componen
 
 ### Do I got you? Here's how it works
 
-At first you refernce defaults.js wherever you think it suits best your needs:
+At first you reference `defaults.js` wherever you think it best suits your needs:
 
 ```html
 <script type="text/javascript" src="defaults.js"></script>
 ```
 
-Then, somewhere in your page layout, you create one or more HTML `<input type=>` UI component and assign them meaningful `id`s attribute's value:
+Then, somewhere in your page layout, you create (at least) one or more HTML `<input ...>` UI component and assign them meaningful `id`s attribute's value:
 
 ```html
   <input id="userid" type="text" size="33" />
@@ -18,7 +18,7 @@ Then, somewhere in your page layout, you create one or more HTML `<input type=>`
   <input id="passid" type="text" size="33" />
 ```
 
-Now, near the end of your HTML page source, inside a couple of `<script>` tags you set the default texts you want be shown as content inside your input components. It's easy, check it out:
+Now, near the end of your HTML page source code, inside a couple of `<script>` tags, you set the default texts you want be shown as content inside your input components. It's easy... check it out:
 
 ```javascript
 
@@ -35,7 +35,6 @@ SetDefaults(obj);
 // You create a function that binds the "default behaviour" to the inputs elements whoose id is has been created in obj as attribute.
 function bind(item){
   InputHints(item.target, obj); 
-  console.log(item);
 }
 
 // Eventually you set the created function as callback for the focusin and focusout events.
@@ -43,9 +42,9 @@ window.addEventListener("focusin", bind);
 window.addEventListener("focusout", bind);
 ```
 
-Easy. Isn't it?
+Pretty short. Isn't it?
 
-### How it looks?
+### How does it look?
 
 Something like the `gif` below:
 
@@ -53,4 +52,4 @@ Something like the `gif` below:
 
 ### Enjoy
 
-I hope this will save you some times and makes your days happier!
+I really hope this will save you some time and makes your days happier!
