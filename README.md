@@ -1,5 +1,7 @@
 # defaultsjs
 
+It allows to set reasonable defaults to input tags. 
+
 Most major browser nowadays implements in their DOM model, UI `<input>` components able to manage default values. Anyway, whatever the reason could be, you may find yourself having the need to implement this behaviour on your own. Why waste your time as I did? Just use (or improve and maybe share) this `324 bytes` of JS.
 
 ### Do I got you? Here's how it works
